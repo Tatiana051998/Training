@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media_squares.css">
+</head>
+
+<body>
+    <header class="header header-container mb-80">
+        <div class="left">
+            <div class="logo">
+                <img src="./picture/Vector.svg" alt="Vector">
+                <img src="./picture/QUICKLINK.svg" alt="QUICKLINK">
+            </div>
+            <nav class="nav">
+                <div class="header-menu">
+                    <a href="#what-is">Что это?</a>
+                    <a href="#how-it-looked">Как это выглядит?</a>
+                    <a href="#how-much">Сколько стоит?</a>
+                    <a href="#FAQ">FAQ</a>
+                </div>
+            </nav>
+        </div>
+        <div class="login-menu">
+            <a href="#" class="link">
+                <img src="./picture/icon-1.svg" alt="login" class="login">
+            </a>
+        </div>
+        <div class="drop-down-menu">
+            <a class="main-item" href="javascript:void(0);" tabindex="1">
+                <img src="./picture/menu.svg" alt="login">
+            </a>
+            <div class="opener-menu">
+                <div class="entrance">
+                    <a href="#">Вход</a>
+                    <div class="profile">
+                        <a href="#">
+                            <img src="./picture/icon-1.svg" alt="profile">
+                        </a>
+                    </div>
+                </div>
+                <a href="#what-is">Что это?</a>
+                <a href="#how-it-looked">Как это выглядит?</a>
+                <a href="#how-much">Сколько стоит?</a>
+                <a href="#FAQ">FAQ</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero-block container mb-80">
+            <div class="hat">
+                <div class="content">
+                    <div class="hat-content">
+                        <img src="./picture/illustration-1.svg" alt="illustration" class="illustration-1">
+                        <div class="title">Все, что тебе нужно</div>
+                        <div class="title">В одной ссылке</div>
+                        <img src="./picture/illustration-2.svg" alt="illustration-2" class="illustration-2">
+                        <p class="text">Присоединяйся к более 50 млн. людей и делись всем, что ты создаешь, курируешь
+                            или продаешь онлайн. Все в одной ссылке.</p>
+                    </div>
+                    <img src="./picture/hat-img.svg" alt="picture" class="picture">
+                </div>
+            </div>
+            <div class="write-us">
+                <form class="write-email">
+                    <input type="email" placeholder="your@mail.com" class="input-email">
+                </form>
+                <button class="button">
+                    <span class="create-page">Создать страницу</span>
+                    <img src="./picture/arrow.svg" alt="arrow">
+                </button>
+            </div>
+        </div>
+        <div class="features container mb-80" id="what-is">
+            <div class="feature">
+                <div class="pic-1">
+                    <img src="./picture/pic-1.svg" alt="picture">
+                </div>
+                <h2>Кастомные элементы</h2>
+                <p>Создавай и кастомизируй свой профиль за считанные минуты!</p>
+            </div>
+            <div class="feature">
+                <div class="pic-2">
+                    <img src="./picture/pic-2.svg" alt="picture">
+                </div>
+                <h2>Подробная аналитика</h2>
+                <p>Отслеживай информацию о том, кто и откуда интересовался твоим профилем</p>
+            </div>
+            <div class="feature">
+                <div class="pic-3">
+                    <img src="./picture/pic-3.svg" alt="picture">
+                </div>
+                <h2>Короткая ссылка</h2>
+                <p>Красивая персональная ссылка на профиль бесплатно!</p>
+            </div>
+        </div>
+        <div class="screen container mb-80" id="how-it-looked">
+            <div class="image">
+                <img src="./picture/screen-1.svg" alt="screen">
+            </div>
+            <div class="block">
+                <div class="block-text">
+                    Большое количество кастомизируемых элементов поможет лучше рассказать миру о себе и привлечь новых
+                    клиентов
+                </div>
+                <button class="button-true">
+                    <span class="button-text">Попробовать бесплатно</span>
+                </button>
+            </div>
+        </div>
+        <div class="price container mb-80" id="how-much">
+            <h5 class="title">тарифы</h5>
+            <div class="price-list">
+                <div class="card">
+                    <div class="price-info">
+                        <div class="price-name">базовый</div>
+                        <div class="price-sum">
+                            <h2 class="sum">0₽</h2>
+                            <p>/мес</p>
+                        </div>
+                        <div class="info">
+                            <div class="description">
+                                <p>Для тех, кто хочет попробовать сервис</p>
+                            </div>
+                            <div class="benefits">
+                                <ul class="markers">
+                                    <li>Нет платы за использование</li>
+                                    <li>Бесплатный домен</li>
+                                    <li>Несколько тем оформления на выбор</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-button">
+                        <button>Попробовать</button>
+                    </div>
+                </div>
+                <div class="card premiun">
+                    <div class="tag">
+                        <p>Лучший выбор</p>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-name">премиум</div>
+                        <div class="price-sum">
+                            <h2 class="sum">250₽</h2>
+                            <p>/мес</p>
+                        </div>
+                        <div class="info">
+                            <div class="description">
+                                <p>Для продвинутых пользователей</p>
+                            </div>
+                            <div class="benefits">
+                                <ul class="markers">
+                                    <li>Более 100 кастомных элементов</li>
+                                    <li>Доступ к аналитике</li>
+                                    <li>Скидки на продвижение</li>
+                                    <li>Бесплатное хранилище фото</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-button">
+                        <button>Получить премиум</button>
+                    </div>
+                </div>
+            </div>
+            <div class="FAQ container mb-80" id="FAQ">
+                <h5 class="title">FAQ</h5>
+                <div class="FAQ-info">
+                    <details open class="details">
+                        <summary class="summary">Зачем мне нужен Quicklink?
+                            <img src="./picture/pluse.svg" class="pluse" alt="плюс-для-раскрытия-списка">
+                            <img src="./picture/minus.svg" class="minus" alt="минус-для-закрытия-списка">
+                        </summary>
+                        <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию со всем,
+                            что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться множеством ссылок
+                            в одной, чтобы ваши подписчики, посетители и клиенты могли найти все, что они ищут,
+                            в одном месте.</p>
+                        <p>Вы можете добавить ссылку на Quicklink на платформах социальных сетей,
+                            таких как Tiktok и Instagram, включить в подписи к электронной почте и даже отобразить в
+                            виде
+                            QR-кода, чтобы ваша офлайн-аудитория связалась с вами онлайн. </p>
+                    </details>
+                    <details class="details">
+                        <summary class="summary">Как я могу использовать свой профиль?
+                            <img src="./picture/pluse.svg" class="pluse" alt="плюс-для-раскрытия-списка">
+                            <img src="./picture/minus.svg" class="minus" alt="минус-для-закрытия-списка">
+                        </summary>
+                        <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию со всем,
+                            что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться множеством ссылок
+                            в одной, чтобы ваши подписчики, посетители и клиенты могли найти все, что они ищут,
+                            в одном месте.</p>
+                        <p>Вы можете добавить ссылку на Quicklink на платформах социальных сетей,
+                            таких как Tiktok и Instagram, включить в подписи к электронной почте и даже отобразить в
+                            виде
+                            QR-кода, чтобы ваша офлайн-аудитория связалась с вами онлайн. </p>
+                    </details>
+                    <details class="details">
+                        <summary class="summary">Как я могу использовать свой профиль?
+                            <img src="./picture/pluse.svg" class="pluse" alt="плюс-для-раскрытия-списка">
+                            <img src="./picture/minus.svg" class="minus" alt="минус-для-закрытия-списка">
+                        </summary>
+                        <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию со всем,
+                            что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться множеством ссылок
+                            в одной, чтобы ваши подписчики, посетители и клиенты могли найти все, что они ищут,
+                            в одном месте.</p>
+                        <p>Вы можете добавить ссылку на Quicklink на платформах социальных сетей,
+                            таких как Tiktok и Instagram, включить в подписи к электронной почте и даже отобразить в
+                            виде
+                            QR-кода, чтобы ваша офлайн-аудитория связалась с вами онлайн. </p>
+                    </details>
+                    <details class="details">
+                        <summary class="summary">Как я могу использовать свой профиль?
+                            <img src="./picture/pluse.svg" class="pluse" alt="плюс-для-раскрытия-списка">
+                            <img src="./picture/minus.svg" class="minus" alt="минус-для-закрытия-списка">
+                        </summary>
+                        <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию со всем,
+                            что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться множеством ссылок
+                            в одной, чтобы ваши подписчики, посетители и клиенты могли найти все, что они ищут,
+                            в одном месте.</p>
+                        <p>Вы можете добавить ссылку на Quicklink на платформах социальных сетей,
+                            таких как Tiktok и Instagram, включить в подписи к электронной почте и даже отобразить в
+                            виде
+                            QR-кода, чтобы ваша офлайн-аудитория связалась с вами онлайн. </p>
+                    </details>
+                    <details class="details">
+                        <summary class="summary">Как я могу использовать свой профиль?
+                            <img src="./picture/pluse.svg" class="pluse" alt="плюс-для-раскрытия-списка">
+                            <img src="./picture/minus.svg" class="minus" alt="минус-для-закрытия-списка">
+                        </summary>
+                        <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию со всем,
+                            что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться множеством ссылок
+                            в одной, чтобы ваши подписчики, посетители и клиенты могли найти все, что они ищут,
+                            в одном месте.</p>
+                        <p>Вы можете добавить ссылку на Quicklink на платформах социальных сетей,
+                            таких как Tiktok и Instagram, включить в подписи к электронной почте и даже отобразить в
+                            виде
+                            QR-кода, чтобы ваша офлайн-аудитория связалась с вами онлайн. </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer-container">
+        <div class="column-1">
+            <div class="footer-logo">
+                <img src="./picture/logo-2.svg" alt="logo">
+            </div>
+            <div class="social">
+                <img src="./picture/facebook.svg" alt="facebook">
+                <img src="./picture/twitter.svg" alt="twitter">
+                <img src="./picture/instagram.svg" alt="instagram">
+                <img src="./picture/youtoube.svg" alt="youtoube">
+            </div>
+        </div>
+        <div class="column-2">
+            <ul>
+                <li><a href="#">Что это?</a></li>
+                <li><a href="#">Как это работает?</a></li>
+                <li><a href="#">Сколько стоит?</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="column-3">
+            <ul>
+                <li><a href="#">Перс. данные</a></li>
+                <li><a href="#">Безопасность</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Политика отмены</a></li>
+            </ul>
+        </div>
+        <div class="column-4">
+            <ul>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Партнерам</a></li>
+            </ul>
+        </div>
+        <div class="message">
+            <a href="#">
+                <img src="./picture/message.svg" alt="feedback">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
