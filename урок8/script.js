@@ -1,10 +1,10 @@
 const str = 'JavaScript is fun!'
 
-console.log(str.includes `fun`);
+console.log(str.includes (`fun`));
 
 /*------------------*/
 
-let value = 0;
+const value = 0;
 
 if (!value) {
   console.log(value);
