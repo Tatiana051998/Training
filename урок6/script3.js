@@ -1,5 +1,5 @@
 const day = +prompt('Введит число');
-let monthNumber;
+let monthName;
 
 switch (day) {
     case 1:
