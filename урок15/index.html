@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 15</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        
+        .box {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        
+        .my-class {
+            background: lightblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Взаимодействие JavaScript с DOM </h1>
+        <h2 id="myTitle">Привет, мир!</h2>
+        <button onclick="task1()">1. Изменить текст</button>
+        <br><br>
+
+        <div class="test">Этот элемент изменит стиль</div>
+        <button onclick="task2()">2. Изменить фон и цвет</button>
+        <br><br>
+
+        <div id="area"></div>
+        <button onclick="task3()">3. Добавить параграф</button>
+        <br><br>
+
+        <div id="removeMe">
+            <p>Я буду удалён!</p>
+        </div>
+
+        <button onclick="task4()">4. Удалить элемент</button>
+        <br><br>
+
+        <a id="myLink" href="https://google.com">Google</a>
+        <button onclick="task5()">5. Изменить ссылку</button>
+        <br><br>
+        
+        <div id="newElementArea"></div>
+        <button onclick="task6()">6. Создать новый элемент с классом</button>
+        <br><br>
+        
+        <div id="toggleMe">Нажми на кнопку, чтобы переключить мой класс</div>
+        <button onclick="task7()">7. Переключить класс</button>
+    </div>
+
+    <script>
+        // Находим элемент по ID и меняем текст
+        function task1() {
+            let element = document.getElementById('myTitle');
+            element.textContent = 'Текст изменён!';
+            console.log('Текст изменён на "Текст изменён!"');
+        }
+        
+        // Меняем фон и цвет текста элемента
+        function task2() {
+            let element = document.querySelector('.test');
+            element.style.backgroundColor = 'green';
+            element.style.color = 'white';
+            console.log('Фон и цвет изменены');
+        }
+        
+        // Создаем новый параграф и добавляем в конец документа
+        function task3() {
+            let newP = document.createElement('p');
+            newP.textContent = 'Это новый параграф!';
+            newP.style.background = 'yellow';
+            newP.style.padding = '10px';
+            document.getElementById('area').appendChild(newP);
+            console.log('Добавлен новый параграф');
+        }
+        
+        // Удаляем элемент с указанным ID
+        function task4() {
+            let element = document.getElementById('removeMe');
+            element.remove();
+            console.log('Элемент удалён');
+        }
+        
+        // Меняем атрибут ссылки и выводим в консоль
+        function task5() {
+            let link = document.getElementById('myLink');
+            console.log('Старый URL:', link.href);
+            link.href = 'https://yandex.ru';
+            link.textContent = 'Яндекс';
+            console.log('Новый URL:', link.href);
+            console.log('Ссылка изменена');
+        }
+        
+        // Создаем новый элемент, добавляем класс и добавляем в DOM
+        function task6() {
+            let newDiv = document.createElement('div');
+            newDiv.textContent = 'Я новый элемент с классом!';
+            newDiv.classList.add('my-class');
+            document.getElementById('newElementArea').appendChild(newDiv);
+            console.log('Создан новый элемент с классом my-class');
+        }
+        
+        // Переключаем класс у существующего элемента
+        function task7() {
+            let element = document.getElementById('toggleMe');
+            element.classList.toggle('my-class');
+            let hasClass = element.classList.contains('my-class');
+            console.log('Есть ли класс my-class?', hasClass);
+        }
+    </script>
+</body>
+</html>
