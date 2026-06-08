@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по математике</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📐 Тест по математике</h1>
+            <p>Проверь свои знания!</p>
+        </div>
+        
+        <div class="content">
+            <div id="startScreen" class="start-screen">
+                <p class="start-text">В тесте 5 вопросов по математике</p>
+                <p class="start-info">📊 Есть вопросы с выбором ответа и с вводом чисел</p>
+                <button class="btn" onclick="startTest()">🚀 Начать тест</button>
+            </div>
+            
+            <div id="testScreen" class="test-screen">
+                <div id="questionContainer"></div>
+                <div id="feedback"></div>
+            </div>
+
+            <div id="resultScreen" class="result-screen">
+                <div class="result-box">
+                    <h2>🎉 Тест завершён!</h2>
+                    <div class="score" id="scoreDisplay"></div>
+                    <button class="btn btn-restart" onclick="restartTest()">🔄 Пройти снова</button>
+                    <div id="bestScoreDisplay" class="best-score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
