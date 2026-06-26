@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0e17;
+    color: #fffffe;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ff8906;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 137, 6, 0.3);
+}
+
+.game-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+}
+
+.panel {
+    background: #1a1a2e;
+    border: 1px solid #2a2a4e;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.panel h2 {
+    color: #ff8906;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #2a2a4e;
+    padding-bottom: 8px;
+}
+
+.panel p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.panel span {
+    color: #ff8906;
+    font-weight: bold;
+}
+
+/* Кнопки */
+button {
+    background: #ff8906;
+    color: #0f0e17;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 4px 4px 0;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #ff6f00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 137, 6, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Инвентарь */
+#inventory {
+    min-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.inventory-item {
+    background: #2a2a4e;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.inventory-item:hover {
+    background: #3a3a6e;
+}
+
+.inventory-item.used {
+    background: #ff8906;
+    color: #0f0e17;
+}
+
+/* Лог событий */
+#log {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 13px;
+    background: #0f0e17;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#log div {
+    padding: 4px 0;
+    border-bottom: 1px solid #1a1a2e;
+}
+
+#log .fight { color: #ff6b6b; }
+#log .loot { color: #ffd93d; }
+#log .info { color: #6bcbff; }
+#log .success { color: #6bcb77; }
+#log .danger { color: #ff4757; }
+#log .defend { color: #a29bfe; }
+
+/* Скролл */
+#log::-webkit-scrollbar {
+    width: 6px;
+}
+
+#log::-webkit-scrollbar-track {
+    background: #0f0e17;
+}
+
+#log::-webkit-scrollbar-thumb {
+    background: #2a2a4e;
+    border-radius: 3px;
+}
+
+#log::-webkit-scrollbar-thumb:hover {
+    background: #ff8906;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Анимация */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#log div {
+    animation: slideIn 0.2s ease;
+}

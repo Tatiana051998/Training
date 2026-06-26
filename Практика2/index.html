@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текстовая RPG Игра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>⚔️ Текстовая RPG Игра</h1>
+        
+        <div class="game-layout">
+            <!-- Левая панель: Статистика -->
+            <div class="left-panel">
+                <div class="panel">
+                    <h2>📊 Статистика</h2>
+                    <p><strong>Имя:</strong> <span id="name">Герой</span></p>
+                    <p><strong>❤️ Здоровье:</strong> <span id="hp">100</span>/<span id="maxHp">100</span></p>
+                    <p><strong>⚔️ Сила:</strong> <span id="strength">10</span></p>
+                    <p><strong>🛡️ Защита:</strong> <span id="defense">5</span></p>
+                    <p><strong>⭐ Уровень:</strong> <span id="level">1</span></p>
+                    <p><strong>💰 Золото:</strong> <span id="gold">0</span></p>
+                </div>
+                
+                <div class="panel">
+                    <h2>🎒 Инвентарь</h2>
+                    <div id="inventory">Пусто</div>
+                </div>
+            </div>
+            
+            <!-- Правая панель: Действия -->
+            <div class="right-panel">
+                <div class="panel actions-panel">
+                    <h2>🎮 Действия</h2>
+                    <div id="actions">
+                        <button onclick="playerAttack()">⚔️ Атаковать</button>
+                        <button onclick="playerDefend()">🛡️ Защищаться</button>
+                        <button onclick="useItem()">💊 Использовать предмет</button>
+                    </div>
+                </div>
+                
+                <div class="panel">
+                    <h2>📍 <span id="locationName">Деревня</span></h2>
+                    <p id="locationDesc">Добро пожаловать в деревню. Отдыхай и готовься к приключениям!</p>
+                    <div id="travelButtons">
+                        <button onclick="goTo('forest')">🌲 Идти в лес</button>
+                        <button onclick="goTo('dungeon')">🏚️ Идти в подземелье</button>
+                        <button onclick="goTo('village')">🏘️ Вернуться в деревню</button>
+                    </div>
+                </div>
+                
+                <div class="panel">
+                    <h2>📜 Лог событий</h2>
+                    <div id="log"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
