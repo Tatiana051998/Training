@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0e17;
+    color: #fffffe;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ff8906;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.task {
+    background: #1a1a2e;
+    border: 1px solid #2a2a4e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.task h2 {
+    color: #ff8906;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.desc {
+    color: #a0a0b8;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2a2a4e;
+    border-radius: 6px;
+    background: #0f0e17;
+    color: white;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ff8906;
+}
+
+button {
+    background: #ff8906;
+    color: #0f0e17;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin: 4px 4px 4px 0;
+}
+
+button:hover {
+    background: #ff6f00;
+    transform: translateY(-2px);
+}
+
+button.danger-btn {
+    background: #e74c3c;
+}
+
+button.danger-btn:hover {
+    background: #c0392b;
+}
+
+.display {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    background: #0f0e17;
+    border: 1px solid #2a2a4e;
+    min-height: 50px;
+}
+
+.display .empty {
+    color: #888;
+    font-style: italic;
+}
+
+.display .contact-info {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.display .contact-info strong {
+    color: #ff8906;
+}
+
+/* Расходы */
+#expenseList {
+    margin-top: 15px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#expenseList .empty {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: #0f0e17;
+    border: 1px solid #2a2a4e;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.expense-item:hover {
+    border-color: #ff8906;
+}
+
+.expense-item .info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.expense-item .info .desc {
+    color: #fff;
+    font-weight: bold;
+}
+
+.expense-item .info .amount {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.expense-item .info .date {
+    color: #888;
+    font-size: 12px;
+}
+
+.expense-item .delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.expense-item .delete-btn:hover {
+    background: #c0392b;
+}
+
+#expenseTotal {
+    margin-top: 15px;
+    padding: 12px;
+    background: #0f0e17;
+    border: 1px solid #2a2a4e;
+    border-radius: 6px;
+    text-align: right;
+    font-size: 18px;
+    color: #ff8906;
+}
+
+#expenseTotal span {
+    color: #2ecc71;
+    font-size: 22px;
+}
+
+/* Таймер */
+.timer-display {
+    text-align: center;
+    padding: 20px;
+    background: #0f0e17;
+    border: 2px solid #2a2a4e;
+    border-radius: 12px;
+}
+
+.timer-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#timerDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff8906;
+    font-family: 'Courier New', monospace;
+}
