@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промисы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <h2>Цепочка промисов</h2>
+            <p class="desc">Функция возвращает промис с данными через 2 секунды. Затем данные обрабатываются в цепочке.</p>
+            <button id="task1Btn">Запустить цепочку</button>
+            <div id="task1Result" class="display">Ожидание запуска...</div>
+        </div>
+        
+        <div class="task">
+            <h2>Promise.all</h2>
+            <p class="desc">Два промиса через 3 и 5 секунд. Дожидаемся выполнения обоих.</p>
+            <button id="task2Btn">Запустить Promise.all</button>
+            <div id="task2Result" class="display">Ожидание запуска...</div>
+        </div>
+        
+        <div class="task">
+            <h2>Задание 3: Promise.race</h2>
+            <p class="desc">Два промиса через случайное время (1-5 сек). Выводим результат первого.</p>
+            <button id="task3Btn">Запустить Promise.race</button>
+            <div id="task3Result" class="display">Ожидание запуска...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
