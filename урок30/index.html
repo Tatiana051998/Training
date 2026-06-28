@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 30</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <h2>Всплытие событий</h2>
+            <p class="desc">Кликни на цветные блоки и посмотри в консоль последовательность вызовов</p>
+            
+            <div id="outer" class="box outer">
+                <span>🔴 Внешний (красный)</span>
+                <div id="middle" class="box middle">
+                    <span>🟡 Средний (жёлтый)</span>
+                    <div id="inner" class="box inner">
+                        <span>🟢 Внутренний (зелёный)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="task1ResetBtn" style="margin-top: 10px;">Очистить консоль</button>
+        </div>
+
+        <div class="task">
+            <h2>Остановка всплытия</h2>
+            <p class="desc">В среднем блоке (жёлтом) всплытие остановлено. Кликни и посмотри в консоль.</p>
+            
+            <div id="outer2" class="box outer">
+                <span>🔴 Внешний (красный)</span>
+                <div id="middle2" class="box middle">
+                    <span>🟡 Средний (жёлтый) - всплытие остановлено!</span>
+                    <div id="inner2" class="box inner">
+                        <span>🟢 Внутренний (зелёный)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="task2ResetBtn" style="margin-top: 10px;">Очистить консоль</button>
+        </div>
+
+        <div class="task">
+            <h2>Делегирование событий</h2>
+            <p class="desc">Введи текст в поля. Если длина больше 20 символов - поле подсветится красным.</p>
+            
+            <form id="testForm">
+                <div class="form-group">
+                    <label for="field1">Поле 1:</label>
+                    <input type="text" id="field1" class="form-input" placeholder="Максимум 20 символов">
+                    <span class="validation-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="field2">Поле 2:</label>
+                    <input type="text" id="field2" class="form-input" placeholder="Максимум 20 символов">
+                    <span class="validation-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="field3">Поле 3:</label>
+                    <input type="text" id="field3" class="form-input" placeholder="Максимум 20 символов">
+                    <span class="validation-message"></span>
+                </div>
+                
+                <button type="submit">Отправить</button>
+            </form>
+            
+            <div id="formStatus" class="display">Ожидание ввода...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
