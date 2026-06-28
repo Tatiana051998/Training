@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 32</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <h2>Создание поста</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="postUserId">ID пользователя:</label>
+                    <input type="number" id="postUserId" class="form-input" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="postTitle">Заголовок:</label>
+                    <input type="text" id="postTitle" class="form-input" placeholder="Введите заголовок" required>
+                </div>
+                <div class="form-group">
+                    <label for="postBody">Текст поста:</label>
+                    <textarea id="postBody" class="form-input" rows="3" placeholder="Введите текст поста" required></textarea>
+                </div>
+                <button type="submit">Отправить POST</button>
+            </form>
+            
+            <div id="postResponse" class="display">
+                <span class="empty">Ожидание отправки...</span>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Список постов</h2>
+            <p class="desc">Загрузи список постов с сервера</p>
+            
+            <button id="loadPostsBtn">Загрузить посты</button>
+            <button id="clearPostsBtn" class="danger-btn">Очистить список</button>
+            
+            <div id="postsList">
+                <p class="empty">Нажми "Загрузить посты"</p>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Удаление поста</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="deletePostId">ID поста для удаления:</label>
+                    <input type="number" id="deletePostId" class="form-input" placeholder="1" required>
+                </div>
+                <div class="form-group" style="display: flex; align-items: flex-end;">
+                    <button id="deletePostBtn">Удалить пост</button>
+                </div>
+            </div>
+            
+            <div id="deleteResponse" class="display">
+                <span class="empty">Ожидание удаления...</span>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Обновление пользователя</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="userId">ID пользователя:</label>
+                    <input type="number" id="userId" class="form-input" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="userName">Имя:</label>
+                    <input type="text" id="userName" class="form-input" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" class="form-input" placeholder="email@example.com" required>
+                </div>
+                <button type="submit">Обновить пользователя (PUT)</button>
+                <button type="button" id="loadUserBtn">Загрузить пользователя</button>
+            </form>
+            
+            <div id="userResponse" class="display">
+                <span class="empty">Ожидание обновления...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
