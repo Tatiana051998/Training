@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классы в JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <h2>Класс Book</h2>
+            <p class="desc">Книга с полями: название, автор, страницы</p>
+            
+            <div class="info-box">
+                <h3>Созданные книги</h3>
+                <div id="bookList"></div>
+            </div>
+            
+            <button onclick="showBookInfo()">Показать книги в консоли</button>
+        </div>
+        <div class="task">
+            <h2>Класс User</h2>
+            <p class="desc">Пользователь с полями: имя, email</p>
+            
+            <div class="info-box">
+                <h3>Созданные пользователи</h3>
+                <div id="userList"></div>
+            </div>
+            
+            <button onclick="showUserInfo()">Показать пользователей в консоли</button>
+        </div>
+        <div class="task">
+            <h2>Класс Rectangle</h2>
+            <p class="desc">Геттер perimeter и сеттер height с проверкой</p>
+            
+            <div class="info-box">
+                <h3>Тестирование прямоугольника</h3>
+                <div id="rectangleResults"></div>
+            </div>
+            
+            <button onclick="showRectangleInfo()">Показать тест в консоли</button>
+        </div>
+
+        <div class="footer">
+            <p>Нажми <kbd>F12</kbd> → вкладка <kbd>Console</kbd>, чтобы увидеть полный вывод</p>
+            <button onclick="location.reload()">Перезагрузить страницу</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
